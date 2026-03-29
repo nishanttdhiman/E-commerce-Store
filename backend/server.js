@@ -3,6 +3,8 @@ import dotenv from "dotenv";
 import authRoutes from "./routes/auth.route.js";
 import { connectDB } from "./lib/lib.js";
 import cookieParser from "cookie-parser";
+import productRoutes from "./routes/product.route.js";
+import cartRoutes from "./routes/cart.route.js";
 
 dotenv.config();
 connectDB();
@@ -14,6 +16,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
+app.use("/api/products", productRoutes);
+app.use("/api/cart", cartRoutes);
 
 app.listen(PORT, () => {
   console.log("Server running ", PORT);

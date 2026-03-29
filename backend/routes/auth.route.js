@@ -3,7 +3,7 @@ import {
   login,
   logout,
   signup,
-  refreshToken, 
+  refreshToken,
 } from "../controllers/auth.controller.js";
 
 const router = express.Router();
