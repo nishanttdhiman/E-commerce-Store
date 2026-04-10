@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import CategoryItem from "../components/CategoryItem";
-// import { useProductStore } from "../stores/useProductStore";
+import { useProductStore } from "../stores/useProductStore";
 // import FeaturedProducts from "../components/FeaturedProducts";
 
 const categories = [
@@ -14,7 +14,7 @@ const categories = [
 ];
 
 const HomePage = () => {
-  // const { fetchFeaturedProducts, products, isLoading } = useProductStore();
+  const { fetchFeaturedProducts, products, isLoading } = useProductStore();
 
   // useEffect(() => {
   //   fetchFeaturedProducts();

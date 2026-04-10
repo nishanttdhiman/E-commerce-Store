@@ -17,7 +17,7 @@ const CreateProductForm = () => {
   const [newProduct, setNewProduct] = useState({
     name: "",
     description: "",
-    price: "",
+    price: "",      
     category: "",
     image: "",
   });

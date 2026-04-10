@@ -8,6 +8,9 @@ import { useUserStore } from "./stores/useUserStore.js";
 import { useEffect } from "react";
 import LoadingSpinner from "./components/LoadingSpinner.jsx";
 import AdminPage from "./pages/AdminPage.jsx";
+import CategoryPage from "./pages/CategoryPage.jsx";
+
+// import CategoryItem from "./components/CategoryItem.jsx";
 
 const App = () => {
   const { user, checkAuth, checkingAuth } = useUserStore();
@@ -49,6 +52,7 @@ const App = () => {
                 )
               }
             />
+            <Route path="/category/:category" element={<CategoryPage />} />
           </Routes>
         </div>
       </div>
